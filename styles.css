@@ -1,0 +1,104 @@
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+
+    --transparent-white: hsla(0, 0%, 100%, 0.75); /* paragraphs */
+    --very-light-gray: hsl(0, 0%, 95%); /* background, headings, buttons */ 
+}
+
+html {
+    font-size: 15px;
+}
+
+.row {
+    max-width: 1000px;
+}
+
+.img {
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.header {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    padding: 10px 0 15px;
+    color: var(--very-light-gray);
+    font-size: 3rem;
+}
+
+.parag {
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 5px 0;
+    max-width: 80%;
+    color: var(--transparent-white);
+}
+
+.button {
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: var(--very-light-gray);
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin-bottom: 40px;
+}
+
+.sedan {
+    background-color: var(--bright-orange);
+    border-radius: 10px 10px 0 0;
+    max-width: 100px;
+}
+
+.sedan-btn {
+    color: var(--bright-orange);
+    border: 2px solid var(--very-light-gray);
+}
+
+.suvs {
+    background-color: var(--dark-cyan);
+}
+
+.suvs-btn {
+    color: var(--dark-cyan);
+    border: 2px solid var(--very-light-gray);
+}
+
+.luxury {
+    background-color: var(--very-dark-cyan);
+    border-radius: 0 0 10px 10px;
+}
+
+.luxury-btn {
+    color: var(--very-dark-cyan);
+    border: 2px solid var(--very-light-gray);
+}
+
+@media only screen and (min-width: 600px) {
+    .button {
+        margin-top: 50px;
+    }
+
+    .sedan {
+        border-radius: 10px 0 0 10px;
+    }
+
+    .luxury {
+        border-radius: 0 10px 10px 0;
+    }
+
+    .sedan-btn:hover {
+        background-color: var(--bright-orange);
+        color: var(--very-light-gray);
+    }
+
+    .suvs-btn:hover {
+        background-color: var(--dark-cyan);
+        color: var(--very-light-gray);
+    }
+
+    .luxury-btn:hover {
+        background-color: var(--very-dark-cyan);
+        color: var(--very-light-gray);
+    }
+}
